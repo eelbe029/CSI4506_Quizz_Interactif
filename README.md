@@ -8,11 +8,12 @@ Ouvrir `index.html` dans un navigateur récent. Le site fonctionne localement, s
 - Chaque banque initiale contient 15 vrai/faux et 10 choix multiples.
 - Une séance standard tire 15 V/F et 10 QCM et dure au maximum 60 minutes, conformément aux indications du Quiz 1 dans `Slides_PDF/FAQ.pdf`.
 - Le mode révision montre les corrections au fil de la séance; le mode examen les réserve aux résultats.
+- Le sélecteur `English / Français` traduit l'interface, les questions, les choix, les indices et les explications. La langue choisie est mémorisée dans le navigateur. Les traductions de la banque sont dans `question-bank-en.js`.
 - Il s'agit de questions d'entraînement générées à partir des supports, pas de questions officielles.
 
 ## Modifier et agrandir la banque
 
-Les questions vivent dans `question-bank.js`; l'interface est dans `app.js` et l'apparence dans `styles.css`. Les données sont définies dans l'objet `data`, séparément du rendu. Pour enrichir un chapitre, ajoute une rangée dans son tableau `tf` ou `mc` :
+Les questions françaises vivent dans `question-bank.js`; leurs traductions anglaises sont alignées par identifiant dans `question-bank-en.js`. L'interface est dans `app.js` et l'apparence dans `styles.css`. Les données sont définies séparément du rendu. Pour enrichir un chapitre, ajoute une rangée dans son tableau `tf` ou `mc`, puis ajoute sa traduction anglaise avec le même identifiant :
 
 - V/F : `[énoncé, réponseBooléenne, indice, explication, concept, difficulté, pagePDF]`.
 - QCM : `[question, indexCorrect0à3, choixABCD, indice, explicationsParChoix, concept, difficulté, pagePDF]`.

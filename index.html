@@ -7,6 +7,7 @@
   <title>CSI 4506 · Révision interactive</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="question-bank.js"></script>
+  <script defer src="question-bank-en.js"></script>
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -15,11 +16,11 @@
       <span class="brand-mark">AI</span>
       <span><strong>CSI 4506</strong><small>Révision interactive</small></span>
     </a>
-    <div class="top-actions"><span class="quiet-label">Fiches de cours · Automne 2026</span><button class="button button-quiet" id="home-button" type="button">Accueil</button></div>
+    <div class="top-actions"><span class="quiet-label" id="course-label">Fiches de cours · Automne 2026</span><button class="button button-quiet" id="language-toggle" type="button" aria-label="Passer en anglais">English</button><button class="button button-quiet" id="home-button" type="button">Accueil</button></div>
   </header>
 
   <main id="app" class="shell" aria-live="polite"></main>
 
-  <footer class="footer"><span>Un outil d'entraînement local, à partir des supports du cours.</span><span>Progression enregistrée dans ce navigateur.</span></footer>
+  <footer class="footer"><span id="footer-description">Un outil d'entraînement local, à partir des supports du cours.</span><span id="footer-storage">Progression enregistrée dans ce navigateur.</span></footer>
 </body>
 </html>
